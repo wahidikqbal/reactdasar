@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './containers/Home/Home';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HelloFunctional from './components/HelloFunctional';
-import HelloStateFull from './containers/HelloStateFull';
+// import HelloFunctional from './components/HelloFunctional';
+// import HelloStateFull from './containers/HelloStateFull';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    
+{/*     
     <HelloFunctional />
+    <HelloStateFull/> */}
 
-    <HelloStateFull/>
+    <Home/>
 
   </React.StrictMode>,
   document.getElementById('root')
