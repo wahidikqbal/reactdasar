@@ -32,7 +32,6 @@ p.time {
 p.title {
     font-size: 14px;
     font-weight: 600;
-    text-transfrom: capitalize;
     margin: 0px;
     margin-top: 10px;
     color: #2d2d2d;
@@ -40,7 +39,6 @@ p.title {
 p.desc {
     font-size: 12px;
     font-weight: 500;
-    text-transfrom: capitalize;
     margin: 0px;
     margin-top: 2px;
     color: #5d5d5d;
