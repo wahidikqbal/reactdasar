@@ -1,21 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './containers/Home/Home';
+import Product from './containers/product/product';
+import YouTube from './containers/YouTube/YouTube';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import HelloFunctional from './components/HelloFunctional';
-// import HelloStateFull from './containers/HelloStateFull';
+import HelloFunctional from './components/StatelessComp/HelloFunctional';
+import HelloStateFull from './containers/StateFullComp/HelloStateFull';
+import LifeCycleComp from './containers/LifeCycleComp/LifeCycleComp';
+import Blogspot from './containers/Blogspot/Blogspot';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-{/*     
-    <HelloFunctional />
-    <HelloStateFull/> */}
+    
+    {/* <HelloFunctional/>
+    <HelloStateFull/>
+    
+    <YouTube/>
+    <LifeCycleComp/>
+  <Product/> */}
 
-    <Home/>
+  <Blogspot/>
+
 
   </React.StrictMode>,
   document.getElementById('root')

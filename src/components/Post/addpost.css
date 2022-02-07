@@ -1,0 +1,48 @@
+.from-add-post {
+    box-shadow: 0px 0px 16px black;
+    max-width: 500px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.from-add-post label{
+    display: block;
+    font-size: 14px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.from-add-post input, .from-add-post textarea {
+    outline: none;
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 95%;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: gray;
+}
+
+button.btn-submit{
+    outline: none;
+    border: 1px solid rgb(76, 119, 199);
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: rgb(76, 119, 199);;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: white;
+}
+
+button.btn-submit:hover{
+    color: white;
+    border: 1px solid rgb(76, 119, 199);
+    background-color: rgb(76, 119, 199);;
+    cursor: pointer;
+}
+

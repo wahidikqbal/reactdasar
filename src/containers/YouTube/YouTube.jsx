@@ -1,12 +1,22 @@
 import React, {Component} from "react";
 import YoutubeComp from "../../components/YoutubeComp/YoutubeComp";
+import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
 
-class Home extends React.Component{
+class YouTube extends React.Component{
+    state = {
+        showComponent: true
+    }
+    componentDidMount(){
+        setTimeout(()=> {
+            this.setState({
+                showComponent: false
+            })
+        }, 3000)
+    }
     render(){
         return (
-
             <div>
-                <p> Youtube Component</p>
+                <h4> Youtube Component</h4>
                 <hr />
                 <YoutubeComp 
                 time="7.12" 
@@ -23,7 +33,12 @@ class Home extends React.Component{
                 title="Turorial React JS-Bagian 3" 
                 desc="500x ditonton. 22 hari yang lalu"/>
 
-                <YoutubeComp />
+                <YoutubeComp/>
+                {
+                    this.state.showComponent ?
+                    <LifeCycleComp/>
+                    : null
+                }
             </div>
         )
     }
@@ -35,4 +50,4 @@ YoutubeComp.defaultProps = {
     desc: "xx ditonton, x hari yang lalu"
 }
 
-export default Home;
+export default YouTube;
